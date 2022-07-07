@@ -1,0 +1,98 @@
+<%-include('common/head')%>
+
+    <%-include('common/navbar')%>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/home-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Clean Blog</h1>
+                            <span class="subheading">Register page</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <section class="ftco-section">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-7 col-lg-5">
+                  <div class="wrap">
+                    <div class="login-wrap p-4 p-md-5">
+                      <div class="d-flex">
+                        <div class="w-100">
+                          <h3 class="mb-4">Sign Up</h3>
+                        </div>
+                      </div>
+                      <form action="/add-signup" method="post" class="signin-form">
+                        <div class="form-group mt-3">
+                          <label class="form-control-placeholder" for="username"
+                            >Username</label
+                          >
+                          <input type="text" class="form-control" name="username" required />
+                        </div>
+                        <div class="form-group mt-3">
+                          <label class="form-control-placeholder" for="email"
+                            >Email</label
+                          >
+                          <input type="email" class="form-control" name="email" required />
+                        </div>
+                        <div class="form-group">
+                          <label class="form-control-placeholder" for="password"
+                            >Password</label
+                          >
+                          <input
+                            id="password-field"
+                            type="password"
+                            class="form-control"
+                            name="password"
+                            required
+                          />
+        
+                          <!-- <span
+                            toggle="#password-field"
+                            class="fa fa-fw fa-eye field-icon toggle-password"
+                          ></span> -->
+                        </div>
+                        <div class="form-group">
+                          <label class="form-control-placeholder" for="confirmPassword"
+                            >Confirm Password</label
+                          >
+                          <input
+                            id="password-field"
+                            type="password"
+                            class="form-control"
+                            name="confirmPassword"
+                            required
+                          />
+        
+                          <!-- <span
+                            toggle="#password-field"
+                            class="fa fa-fw fa-eye field-icon toggle-password"
+                          ></span> -->
+                        </div>
+                        <br>
+                        <div class="form-group">
+                          <button
+                            type="submit"
+                            class="form-control btn btn-primary rounded submit px-3"
+                          >
+                            Sign Up
+                          </button>
+                        </div>
+                       
+                      </form>
+                      <p class="text-center">
+                        Already have an account?
+                        <a data-toggle="tab" href="/login">Log In</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        <!-- Footer-->
+        <%-include('common/footer')%>
